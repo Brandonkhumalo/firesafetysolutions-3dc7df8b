@@ -262,7 +262,7 @@ const Services = () => {
             title="Why Choose FSS Africa"
             light
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 title: "Expert Engineers",
@@ -281,7 +281,7 @@ const Services = () => {
                 description: "Comprehensive maintenance and 24/7 emergency support",
               },
             ].map((item, index) => (
-              <div key={index} className="text-center p-6">
+              <div key={index} className="text-center p-4 sm:p-6">
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
                 <p className="text-primary-foreground/80">{item.description}</p>
               </div>

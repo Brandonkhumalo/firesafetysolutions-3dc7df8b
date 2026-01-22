@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
             <img src={logo} alt="Fire Safety Solutions Africa" className="h-16 w-auto bg-background p-2 rounded" />
@@ -27,44 +27,47 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/" className="text-background/80 hover:text-background transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-background/80 hover:text-background transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-background/80 hover:text-background transition-colors">
-                  Our Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-background/80 hover:text-background transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Quick Links and Services - Side by side on mobile */}
+          <div className="grid grid-cols-2 lg:contents gap-8">
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/" className="text-background/80 hover:text-background transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="text-background/80 hover:text-background transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className="text-background/80 hover:text-background transition-colors">
+                    Our Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-background/80 hover:text-background transition-colors">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Our Services</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="text-background/80">Fire Sprinkler Systems</li>
-              <li className="text-background/80">Fire Alarms & Detection</li>
-              <li className="text-background/80">Fire Extinguishers</li>
-              <li className="text-background/80">CCTV & Access Control</li>
-              <li className="text-background/80">Air Conditioning</li>
-              <li className="text-background/80">Fire Safety Training</li>
-            </ul>
+            {/* Services */}
+            <div>
+              <h3 className="font-semibold text-lg mb-4">Our Services</h3>
+              <ul className="space-y-3 text-sm">
+                <li className="text-background/80">Fire Sprinkler Systems</li>
+                <li className="text-background/80">Fire Alarms & Detection</li>
+                <li className="text-background/80">Fire Extinguishers</li>
+                <li className="text-background/80">CCTV & Access Control</li>
+                <li className="text-background/80">Air Conditioning</li>
+                <li className="text-background/80">Fire Safety Training</li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}
