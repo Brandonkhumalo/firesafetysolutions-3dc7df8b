@@ -21,6 +21,8 @@ src/
 ├── App.tsx         # Main app component
 ├── main.tsx        # Entry point
 └── index.css       # Global styles
+server/
+└── index.js        # Express backend for email sending
 ```
 
 ## Development
@@ -29,10 +31,21 @@ src/
 - **Lint**: `npm run lint`
 - **Test**: `npm run test`
 
+## Email Configuration
+The contact form sends emails using SMTP. Configure these environment variables in `.env`:
+- `From_Email` - Sender email address
+- `Password` - Email password
+- `Outgoing_Server` - SMTP server host
+- `SMTP_PORT` - SMTP port (typically 465 for SSL)
+- `To_Email` - Recipient email address
+
 ## Deployment
-This is a static site. Deployment is configured to build and serve from the `dist` directory.
+Uses Express backend for email functionality. Deploy with `node server/index.js & npm run dev`.
 
 ## Recent Changes
+- January 22, 2026: Added email functionality
+  - Created Express server for email sending with nodemailer
+  - Contact form now sends real emails via SMTP
 - January 22, 2026: Migrated from Lovable to Replit
   - Updated Vite config for Replit (port 5000, allowedHosts)
   - Removed Lovable-specific dependencies (lovable-tagger)
