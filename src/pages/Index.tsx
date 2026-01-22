@@ -76,7 +76,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-base border-background/30 text-background hover:bg-background hover:text-foreground">
+              <Button size="lg" variant="secondary" asChild className="text-base bg-background/20 text-background border border-background/30 hover:bg-background hover:text-foreground">
                 <Link to="/contact">
                   <Phone className="mr-2 h-5 w-5" />
                   Contact Us
