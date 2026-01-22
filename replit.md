@@ -21,8 +21,6 @@ src/
 ├── App.tsx         # Main app component
 ├── main.tsx        # Entry point
 └── index.css       # Global styles
-server/
-└── index.js        # Express backend for email sending
 ```
 
 ## Development
@@ -32,20 +30,18 @@ server/
 - **Test**: `npm run test`
 
 ## Email Configuration
-The contact form sends emails using SMTP. Configure these environment variables in `.env`:
-- `From_Email` - Sender email address
-- `Password` - Email password
-- `Outgoing_Server` - SMTP server host
-- `SMTP_PORT` - SMTP port (typically 465 for SSL)
-- `To_Email` - Recipient email address
+The contact form sends emails using EmailJS. Configure these environment variables:
+- `VITE_EMAILJS_SERVICE_ID` - Your EmailJS service ID
+- `VITE_EMAILJS_TEMPLATE_ID` - Your EmailJS template ID  
+- `VITE_EMAILJS_PUBLIC_KEY` - Your EmailJS public key
 
 ## Deployment
-Uses Express backend for email functionality. Deploy with `node server/index.js & npm run dev`.
+This is a static site. Deployment is configured to build and serve from the `dist` directory.
 
 ## Recent Changes
-- January 22, 2026: Added email functionality
-  - Created Express server for email sending with nodemailer
-  - Contact form now sends real emails via SMTP
+- January 22, 2026: Updated email to use EmailJS (frontend-only)
+  - Removed server folder, now uses EmailJS for contact form
+  - Added WhatsApp floating button on all pages
 - January 22, 2026: Migrated from Lovable to Replit
   - Updated Vite config for Replit (port 5000, allowedHosts)
   - Removed Lovable-specific dependencies (lovable-tagger)
