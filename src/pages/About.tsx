@@ -11,27 +11,32 @@ const team = [
   {
     name: "Mr. Brighton Chidziso",
     role: "Managing Director",
-    bio: "Holds a Marketing Degree and 2 NICET certificates for fire engineers. Previously worked at ZIMPAPERS in the advertising department.",
+    bio: "Holds an IMM Marketing Degree amongst many other qualifications. Worked for ZIMPAPERS for 3 years in the advertising department. Holds a NICET certificate for fire engineers.",
+  },
+  {
+    name: "Mr. Maxwell Rabvukwa",
+    role: "Projects Director",
+    bio: "A qualified Automatic Fire Sprinkler system designer and holder of a fire prevention certificate. Has vast experience in the fire fighting industry and worked at FPIB for 30 years.",
   },
   {
     name: "Mr. Dennis Mukwashu",
     role: "Technical Manager",
-    bio: "A qualified fire technician with over 8 years working experience in the emergency services and firefighting industry.",
+    bio: "Has vast experience in the firefighting industry. A qualified fire technician with over 8 years working experience in the emergency services.",
   },
   {
     name: "Humphrey Nyaruwanga",
     role: "Marketing and Sales",
-    bio: "Holds a BCom Honours Degree in Marketing from NUST with a Digital Marketing certificate. Over 10 years experience in fire related industry.",
+    bio: "Holds a BCom Honours Degree in Marketing from NUST with a Digital Marketing certificate from MHZ. Currently studying towards a master's degree. Over 10 years experience in the fire related industry.",
   },
   {
     name: "Mr. Harold Mashaire",
     role: "Projects Manager",
-    bio: "Responsible for project related logistics. Holds a Master's Degree in Strategic Management from UNISA.",
+    bio: "Responsible for all project related logistics. Holds a Master's Degree in Strategic Management from UNISA.",
   },
   {
     name: "Patrick Makwesera",
-    role: "Head Of Operations",
-    bio: "Holds a Higher National Diploma in Quantity Surveying from HEXCO Zimbabwe. Previously held senior management positions at Ministry of Public Works.",
+    role: "Head Of Operations (Engineering Services)",
+    bio: "Holds a Higher National Diploma in Quantity Surveying from HEXCO Zimbabwe. Previously held various senior management positions at Ministry of Public Works.",
   },
 ];
 
@@ -104,27 +109,24 @@ const About = () => {
             <div className="p-8 bg-primary-foreground/10 rounded-2xl">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-primary-foreground/20 rounded-lg">
-                  <Target className="h-8 w-8" />
-                </div>
-                <h3 className="text-2xl font-bold">Our Mission</h3>
-              </div>
-              <p className="text-primary-foreground/90 leading-relaxed">
-                To provide cutting-edge fire safety and security solutions that protect 
-                lives and property while building lasting relationships with our clients 
-                through personalized, high-quality service.
-              </p>
-            </div>
-            <div className="p-8 bg-primary-foreground/10 rounded-2xl">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-primary-foreground/20 rounded-lg">
                   <Eye className="h-8 w-8" />
                 </div>
                 <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
               <p className="text-primary-foreground/90 leading-relaxed">
-                To be the most trusted and preferred fire safety and security solutions 
-                provider in Zimbabwe and the Southern African region, setting the standard 
-                for excellence in the industry.
+                Supplies made easy.
+              </p>
+            </div>
+            <div className="p-8 bg-primary-foreground/10 rounded-2xl">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="p-3 bg-primary-foreground/20 rounded-lg">
+                  <Target className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-bold">Our Mission</h3>
+              </div>
+              <p className="text-primary-foreground/90 leading-relaxed">
+                To deliver a dedicated market logistic to the region through enhanced 
+                customer focus and supplier linkage.
               </p>
             </div>
           </div>

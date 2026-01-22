@@ -80,9 +80,22 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Our Location</h3>
+                    <h3 className="font-semibold text-foreground mb-1">Harare Office</h3>
                     <p className="text-muted-foreground">
-                      Harare, Zimbabwe
+                      3rd Floor Travel Plaza,<br />
+                      Cnr Mazowe & Chinamano St, Harare
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Bulawayo Office</h3>
+                    <p className="text-muted-foreground">
+                      Ramjis Complex Suite 3A,<br />
+                      Robert Mugabe Way / 11th Avenue, Bulawayo
                     </p>
                   </div>
                 </div>
@@ -92,8 +105,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <a href="tel:+263772123456" className="text-muted-foreground hover:text-primary transition-colors">
-                      +263 772 123 456
+                    <a href="tel:+263242797807" className="text-muted-foreground hover:text-primary transition-colors block">
+                      +263 242 797807/6
+                    </a>
+                    <a href="tel:+263717336040" className="text-muted-foreground hover:text-primary transition-colors block">
+                      +263 717 336 040 (WhatsApp)
                     </a>
                   </div>
                 </div>
@@ -103,8 +119,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:info@fssafrica.co.zw" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@fssafrica.co.zw
+                    <a href="mailto:info@firesafetysolutions.co.zw" className="text-muted-foreground hover:text-primary transition-colors block">
+                      info@firesafetysolutions.co.zw
+                    </a>
+                    <a href="mailto:sales@firesafetysolutions.co.zw" className="text-muted-foreground hover:text-primary transition-colors block">
+                      sales@firesafetysolutions.co.zw
                     </a>
                   </div>
                 </div>
@@ -130,11 +149,11 @@ const Contact = () => {
                   For urgent fire safety emergencies, call our 24-hour hotline.
                 </p>
                 <a 
-                  href="tel:+263772123456" 
+                  href="tel:+263717336040" 
                   className="inline-flex items-center gap-2 font-semibold hover:opacity-80 transition-opacity"
                 >
                   <Phone className="h-5 w-5" />
-                  +263 772 123 456
+                  +263 717 336 040
                 </a>
               </div>
             </div>
@@ -243,14 +262,26 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
-      <section className="h-96 bg-muted relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-lg">
-              Harare, Zimbabwe
-            </p>
+      {/* Offices Section */}
+      <section className="py-12 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-background p-8 rounded-xl text-center">
+              <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-2">Harare Office</h3>
+              <p className="text-muted-foreground">
+                3rd Floor Travel Plaza,<br />
+                Cnr Mazowe & Chinamano St, Harare
+              </p>
+            </div>
+            <div className="bg-background p-8 rounded-xl text-center">
+              <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-2">Bulawayo Office</h3>
+              <p className="text-muted-foreground">
+                Ramjis Complex Suite 3A,<br />
+                Robert Mugabe Way / 11th Avenue, Bulawayo
+              </p>
+            </div>
           </div>
         </div>
       </section>

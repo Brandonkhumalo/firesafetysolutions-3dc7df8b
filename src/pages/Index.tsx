@@ -32,14 +32,27 @@ const services = [
 ];
 
 const clients = [
-  "ZIMPLATS",
-  "Metbank",
-  "CMED",
-  "Zimnat",
-  "ZINARA",
-  "PPC Cement",
-  "Pepsi",
-  "NOIC",
+  { name: "World Health Organization", abbrev: "WHO" },
+  { name: "ZIMPLATS", abbrev: "ZIMPLATS" },
+  { name: "Metbank", abbrev: "Metbank" },
+  { name: "Ministry of Public Works", abbrev: "Min. Public Works" },
+  { name: "CMED (Private) Limited", abbrev: "CMED" },
+  { name: "Zimnat", abbrev: "Zimnat" },
+  { name: "Zimpapers", abbrev: "Zimpapers" },
+  { name: "NOIC", abbrev: "NOIC" },
+  { name: "ZINARA", abbrev: "ZINARA" },
+  { name: "CIPF", abbrev: "CIPF" },
+  { name: "Chinhoyi Hospital", abbrev: "Chinhoyi Hospital" },
+  { name: "Primeseed", abbrev: "Primeseed" },
+  { name: "Harare Central Hospital", abbrev: "Harare Central" },
+  { name: "ZBC", abbrev: "ZBC" },
+  { name: "NBSZ", abbrev: "NBSZ" },
+  { name: "Magistrates Court", abbrev: "Magistrates Court" },
+  { name: "Pepsi", abbrev: "Pepsi" },
+  { name: "PPC Cement", abbrev: "PPC Cement" },
+  { name: "GTel", abbrev: "GTel" },
+  { name: "Transmedia", abbrev: "Transmedia" },
+  { name: "Tian Ze Tobacco", abbrev: "Tian Ze Tobacco" },
 ];
 
 const Index = () => {
@@ -76,7 +89,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="secondary" asChild className="text-base bg-background/20 text-background border border-background/30 hover:bg-background hover:text-foreground">
+              <Button size="lg" variant="outline" asChild className="text-base border-background/30 text-background bg-background/10 backdrop-blur-sm">
                 <Link to="/contact">
                   <Phone className="mr-2 h-5 w-5" />
                   Contact Us
@@ -220,21 +233,22 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Clients Section */}
+      {/* Major Clients Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <SectionTitle
-            subtitle="Trusted By"
-            title="Our Valued Clients"
-            description="We're proud to have served leading organizations across Zimbabwe."
-          />
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div className="text-center mb-12">
+            <span className="inline-block px-6 py-2 bg-primary text-primary-foreground text-lg font-bold rounded-md mb-4">
+              MAJOR CLIENTS
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="px-6 py-4 bg-secondary rounded-lg text-muted-foreground font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                data-testid={`client-card-${index}`}
+                className="px-4 py-6 bg-secondary rounded-lg text-center hover-elevate cursor-default flex items-center justify-center min-h-[80px]"
               >
-                {client}
+                <span className="text-foreground font-medium text-sm leading-tight">{client.abbrev}</span>
               </div>
             ))}
           </div>
@@ -258,8 +272,8 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-background/30 text-background hover:bg-background hover:text-foreground">
-              <a href="tel:+263772123456">
+            <Button size="lg" variant="outline" asChild className="border-background/30 text-background bg-background/10 backdrop-blur-sm">
+              <a href="tel:+263717336040">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Us Now
               </a>

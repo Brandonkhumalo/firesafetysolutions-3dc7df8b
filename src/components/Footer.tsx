@@ -73,20 +73,40 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-background/80 text-sm">
-                  Harare, Zimbabwe
-                </span>
+                <div className="text-background/80 text-sm">
+                  <p className="font-medium text-background">Harare Office</p>
+                  <p>3rd Floor Travel Plaza, Cnr Mazowe & Chinamano St</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <div className="text-background/80 text-sm">
+                  <p className="font-medium text-background">Bulawayo Office</p>
+                  <p>Ramjis Complex Suite 3A, Robert Mugabe Way / 11th Avenue</p>
+                </div>
               </li>
               <li>
-                <a href="tel:+263772123456" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
+                <a href="tel:+263242797807" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
                   <Phone className="h-5 w-5 text-primary" />
-                  <span className="text-sm">+263 772 123 456</span>
+                  <span className="text-sm">+263 242 797807/6</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:info@fssafrica.co.zw" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
+                <a href="tel:+263717336040" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <span className="text-sm">+263 717 336 040 (WhatsApp)</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@firesafetysolutions.co.zw" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span className="text-sm">info@fssafrica.co.zw</span>
+                  <span className="text-sm">info@firesafetysolutions.co.zw</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sales@firesafetysolutions.co.zw" className="flex items-center gap-3 text-background/80 hover:text-background transition-colors">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <span className="text-sm">sales@firesafetysolutions.co.zw</span>
                 </a>
               </li>
             </ul>
