@@ -61,31 +61,40 @@ const About = () => {
         </div>
       </section>
 
-      {/* Company Story */}
+      {/* Who We Are */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionTitle
-                subtitle="Our Story"
-                title="Two Decades of Excellence"
+                subtitle="Who We Are"
+                title="Firesafety Solutions"
                 centered={false}
               />
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Fire Safety Solutions Africa specializes in fire prevention, protection, 
-                  detection, and extinguishing systems. Over the years, we've evolved from 
-                  a focused fire safety company to a comprehensive solutions provider.
+                  Is a wholly owned Zimbabwean company that specializes in fire prevention, 
+                  protection, detection, extinguishing systems and has over the years added 
+                  other products and services all in a bid to becoming a preferred supplier.
                 </p>
                 <p>
-                  We're aiming to revolutionize the fire protection industry in Zimbabwe 
-                  and the region by establishing a one-stop shop that offers a host of 
-                  related products and services to ensure customer convenience.
+                  FSS is aiming to revolutionize the fire protection industry in Zimbabwe 
+                  and the region by establishing a one stop shop, that offers a host of 
+                  related products and services to insure customer convenience. Over the 
+                  years FSS has added on air conditioning, CCTV, access control and general 
+                  plumbing so as to deliver on convenience.
                 </p>
                 <p>
-                  Our portfolio has expanded to include air conditioning, CCTV, access 
-                  control, and general plumbing—all designed to deliver maximum convenience 
-                  to our valued clients.
+                  Consequently our clients are going to benefit through enhanced product 
+                  availability, convenience through the provision of centralized purchase 
+                  points with an integrated business system, access to top level project 
+                  management skills.
+                </p>
+                <p>
+                  FSS seeks to offer world class fire protection equipment and other related 
+                  engineering services so as to suit individual customer needs. FSS strives 
+                  on exhibiting the highest level of professionalism, reliability and integrity 
+                  whilst assuring our customers good service delivery.
                 </p>
               </div>
             </div>
