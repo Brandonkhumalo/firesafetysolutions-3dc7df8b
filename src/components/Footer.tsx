@@ -126,6 +126,19 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="border-t border-background/20 mt-6 pt-6 text-center">
+          <p className="text-background/60 text-sm">
+            Created and Designed by{" "}
+            <a 
+              href="https://tishanyq.co.zw" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              Tishanyq Digital
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
