@@ -6,6 +6,7 @@ import SectionTitle from "@/components/SectionTitle";
 import StatCard from "@/components/StatCard";
 import teamImage from "@/assets/team-working.jpg";
 import heroImage from "@/assets/hero-fire-safety.jpg";
+import aboutHeroImage from "@/assets/about-hero.jpg";
 
 const team = [
   {
@@ -101,8 +102,8 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={teamImage}
-                  alt="Our Team at Work"
+                  src={aboutHeroImage}
+                  alt="Fire Safety Professional"
                   className="w-full h-full object-cover"
                 />
               </div>
