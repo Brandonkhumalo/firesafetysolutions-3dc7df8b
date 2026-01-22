@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 12%;
 
-    /* Deep maroon red - matches logo */
-    --primary: 0 45% 30%;
+    /* Lighter maroon red - matches logo */
+    --primary: 0 50% 42%;
     --primary-foreground: 0 0% 100%;
 
     /* Warm gray secondary */
@@ -28,7 +28,7 @@
     --muted-foreground: 0 0% 45%;
 
     /* Accent - lighter maroon */
-    --accent: 0 35% 45%;
+    --accent: 0 45% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
